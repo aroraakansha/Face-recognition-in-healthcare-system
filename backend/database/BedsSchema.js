@@ -1,0 +1,50 @@
+const mongoose=require('mongoose');
+const BedsRegisSchema=new mongoose.Schema({
+    Name:{
+        type:String,
+        required:true
+    },
+    Bed1:{
+        type:Number,
+        required:true
+    },
+    Bed2:{
+        type:Number,
+        required:true
+    },
+    Bed3:{
+        type:Number,
+        required:true
+    },
+    Bed4:{
+        type:Number,
+        required:true
+    },
+    Bed5:{
+        type:Number,
+        required:true
+    },
+    Bed6:{
+        type:Number,
+        required:true
+    },
+    Bed7:{
+        type:Number,
+        required:true
+    },
+    Bed8:{
+        type:Number,
+        required:true
+    },
+    Bed9:{
+        type:Number,
+        required:true
+    },
+    Bed10:{
+        type:Number,
+        required:true
+    }
+
+})
+const BedsSchema=mongoose.model('BedsSchema',BedsRegisSchema);
+module.exports=BedsSchema;
